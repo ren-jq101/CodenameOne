@@ -225,7 +225,7 @@
             <dependency>
                 <groupId>org.apache.maven</groupId>
                 <artifactId>maven-core</artifactId>
-                <version>3.3.3</version>
+                <version>3.6.0</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.maven</groupId>
@@ -544,12 +544,12 @@
                                 <configuration>
                                     <target>
                                         <mkdir dir="${user.home}/.codenameone"/>
-                                        <mkdir dir="${project.build.directory}/generated-sources/project" />
-                                        <mkdir dir="${project.build.directory}/generated-sources/project/lib" />
+                                        <mkdir dir="${project.build.directory}/generated-sources/project"/>
+                                        <mkdir dir="${project.build.directory}/generated-sources/project/lib"/>
                                         <get src="https://www.codenameone.com/files/updates/UpdateCodenameOne.jar" dest="${user.home}/.codenameone/UpdateCodenameOne.jar" skipexisting="true"/>
                                         <java fork="true" jar="${user.home}/.codenameone/UpdateCodenameOne.jar">
                                             <arg value="${project.build.directory}/generated-sources/project"/>
-                                            <arg value="force" />
+                                            <arg value="force"/>
                                         </java>
                                     </target>
                                 </configuration>
