@@ -282,7 +282,7 @@
             <dependency>
                 <groupId>com.guardsquare</groupId>
                 <artifactId>proguard-base</artifactId>
-                <version>7.2.0-beta2</version>
+                <version>7.5.0</version>
             </dependency>
             <dependency>
                 <groupId>javax.xml.bind</groupId>
@@ -544,12 +544,12 @@
                                 <configuration>
                                     <target>
                                         <mkdir dir="${user.home}/.codenameone"/>
-                                        <mkdir dir="${project.build.directory}/generated-sources/project" />
-                                        <mkdir dir="${project.build.directory}/generated-sources/project/lib" />
+                                        <mkdir dir="${project.build.directory}/generated-sources/project"/>
+                                        <mkdir dir="${project.build.directory}/generated-sources/project/lib"/>
                                         <get src="https://www.codenameone.com/files/updates/UpdateCodenameOne.jar" dest="${user.home}/.codenameone/UpdateCodenameOne.jar" skipexisting="true"/>
                                         <java fork="true" jar="${user.home}/.codenameone/UpdateCodenameOne.jar">
                                             <arg value="${project.build.directory}/generated-sources/project"/>
-                                            <arg value="force" />
+                                            <arg value="force"/>
                                         </java>
                                     </target>
                                 </configuration>
